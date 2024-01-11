@@ -14,6 +14,7 @@ const Posts = () => {
   const [loading, setLoading] = useState(false);
   const dispatch = useDispatch();
 
+
   useEffect(() => {
     dispatch(setPosts(data));
   }, [data, dispatch]);
@@ -80,7 +81,7 @@ const Posts = () => {
                               className="rounded-circle"
                               alt=""
                             />
-                            <h4 className="text-info">{post.name}</h4>
+                            <Link className="text-info text-decoration-none" to={`/profile/${post.user}`}><h4>{post.name}</h4></Link>
                           </div>
                           <div className="d-flex flex-column gap-3">
                             <h5>{post.text}</h5>

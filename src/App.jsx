@@ -13,6 +13,7 @@ import Posts from "./Pages/Posts";
 import Post from "./Pages/Post";
 import Register from "./Pages/Register";
 import Developers from "./Pages/Developers";
+import Profile from "./Pages/Profile";
 
 function App() {
   const token = localStorage.getItem(localTokenKey);
@@ -41,7 +42,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/profiles" element={<Developers />} />
-        <Route path="/profile" />
+        <Route path="/profile" element={<Profile/>} />
         <Route
           path="/dashboard"
           element={

@@ -16,7 +16,7 @@ const Dashboard = () => {
             </p>
             <div className="d-flex gap-3">
                 <Link
-                    to={"edit-profile"}
+                    to={"/edit-profile"}
                     className="bg-light px-3 py-2 text-decoration-none text-reset border"
                 >
                     <span className="px-1 rounded-circle bg-info">
@@ -25,7 +25,7 @@ const Dashboard = () => {
                     Edit Profile
                 </Link>
                 <Link
-                    to={"edit-profile"}
+                    to={"/add-education"}
                     className="bg-light px-3 py-2 text-decoration-none text-reset border"
                 >
                     <span className="px-1 rounded-circle bg-info">
@@ -34,7 +34,7 @@ const Dashboard = () => {
                     Add Experinece
                 </Link>
                 <Link
-                    to={"edit-profile"}
+                    to={"/add-education"}
                     className="bg-light px-3 py-2 text-decoration-none text-reset border"
                 >
                     <span className="px-1 rounded-circle bg-info">
